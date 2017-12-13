@@ -1,1 +1,165 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Satisfy|Material+Icons');
+/* Global Styles */
+html {
+    border: 0;
+    margin: 0;
+    font-size: 20px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+}
+/* End Global Styles */
+
+/* Link */
+.link--plain {
+    text-decoration: none;
+    color: inherit;
+}
+/* End Link */
+
+/* Page centering tray */
+.tray {
+    width: 100%;
+    margin: 0 auto;
+}
+@media (min-width:1280px) {
+    .tray { width: 1280px }
+}
+/* End Page centering tray */
+
+/* Typography Classes */
+.text--center {
+    text-align: center;
+}
+.text--green {
+    color: #2E7D32;
+}
+.text--jumbo {
+    font-size: 3rem;
+}
+.text--left {
+    text-align: center;
+}
+.text--right {
+    text-align: center;
+}
+.text--silver {
+    color: #888;
+}
+.text--silver-medium {
+    color: #666;
+}
+.text--silver-dark {
+    color: #333;
+}
+/* End Typography Classes */
+
+/* Banner */
+.banner {
+    border-bottom: .2rem solid #000;
+}
+.banner__heading--jumbo {
+    font-size: 3rem;
+}
+/* End Banner */
+
+/* Flexibles */
+.flexible {
+    display: flex;
+}
+.flexible--center {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.flexible__item--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 800px) {
+    .flexible--vertical-xs {
+        flex-direction: column;
+    }
+    .flexible__item--center-xs {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* End Flexibles */
+
+/* Material Design Icons */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+/* End Material Design Icons */
+
+/* Badge */
+.badge {
+    background-color: #e6e6e6;
+    color: #333;
+    margin: 1rem;
+    transition: background-color .5s;
+}
+.badge--link:hover {
+    background-color: #9C27B0;
+}
+.badge--jumbo {
+    width: 6rem;
+    height: 6rem;
+}
+.badge--round {
+    border-radius: 1rem;
+}
+.badge--round.badge--jumbo {
+    border-radius: 3rem;
+}
+.badge__link {
+    color: #333;
+    text-decoration: none;
+    transition: color .5s;
+}
+.badge__link:hover {
+    color: #FFF;
+}
+/* End Badge */
+
+/* Content */
+.content {
+    padding: 2rem;
+}
+.content__focus {
+    width: 60%;
+    margin: 0 auto;
+    transition: width .5s;
+}
+@media (max-width: 1080px) {
+    .content__focus {
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+<div class="banner">
+  <h1 class="text--center">Contact Me</h1>
+</div>
+<div *ngIf="successMessage" class="content">
+  <div class="content__focus">
+    <h3 class="text--green text--center">
+      {{successMessage}}
+    </h3>
+  </div>
+</div>
+<div class="content">
+  <div class="content__focus">
+    <form class="form" #contact="ngForm" (ngSubmit)="onSubmit()">
+      <fieldset class="form__fieldset--plain" [disabled]="loading">
+        <div class="form__group">
+          <label class="form__label" for="from">Your Email Address</label>
+          <input id="from"
+            tabindex="1"
+            type="email"
+            class="form__input"
+            required
+            [(ngModel)]="model.from" name="from">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="subject">Subject</label>
+          <input id="subject"
+            tabindex="2"
+            type="text"
+            class="form__input form__input--long"
+            required
+            [(ngModel)]="model.subject" name="subject">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="body">Message</label>
+          <textarea id="body"
+            tabindex="3"
+            required
+            class="form__textarea"
+            minlength="4"
+            [(ngModel)]="model.body" name="body"></textarea>
+        </div>
+        <button tabindex="4" type="submit" class="form__submit" [disabled]="contact.invalid">Submit</button>
+      </fieldset>
+    </form>
+</div>
+</div>

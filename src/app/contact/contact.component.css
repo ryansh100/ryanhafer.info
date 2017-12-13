@@ -1,0 +1,61 @@
+/* Form */
+.form__group {
+    margin-bottom: 1rem;
+}
+.form__label {
+    display: block;
+    font-size: .8rem;
+}
+.form__fieldset--plain {
+    border: 0;
+}
+.form__input {
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    outline: none;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+}
+.form__input--long {
+    width: 100%;
+}
+.form__textarea {
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    outline: none;
+    border: 1px solid #CCC;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 6rem;
+}
+
+.form__submit {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    outline: none;
+    border: 1px solid #1A237E;
+    width: 100%;
+    background-color: #303F9F;
+    color: #FFF;
+    transition: color .5s, background-color .5s, border-color .5s;
+}
+.form__submit:focus {
+    background-color: #3F51B5;
+}
+.form__submit:disabled {
+    cursor: not-allowed;
+    color: #E8EAF6;
+    background-color: #9FA8DA;
+    border-color: #7986CB;
+}
+/* End Form */
+
+/* NG Validation */
+.form__textarea.ng-touched.ng-invalid,
+.form__input.ng-touched.ng-invalid {
+    border-color: red;
+}

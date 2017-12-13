@@ -1,0 +1,33 @@
+/* Navigation Styles */
+.navigation {
+    border-top: .2rem solid #000;
+    border-bottom: .2rem solid #000;
+}
+.navigation__item--brand {
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+    padding-right: .75rem;
+}
+.navigation__item--right {
+    margin-left: auto;
+}
+.navigation__link, .navigation__link--brand {
+    display: block;
+    padding: .75rem .75rem;
+    color: #888;
+    text-decoration: none;
+    transition: color .5s, background-color .5s;
+}
+.navigation__link:hover {
+    background-color: #e6e6e6;
+    color: #999;
+}
+.navigation__link--brand {
+    padding: 0;
+    color: #000;
+}
+.navigation__text {
+    display: block;
+    padding: .75rem .75rem;
+}
+/* End Navigation Styles */
