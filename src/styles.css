@@ -57,6 +57,11 @@ body {
 .text--silver-dark {
     color: #333;
 }
+@media (max-width: 800px) {
+    .text--center-xs {
+        text-align: center;
+    }
+}
 /* End Typography Classes */
 
 /* Banner */
